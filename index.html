@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,12 +12,14 @@
       color: #333;
       text-align: center;
     }
+
     h1 {
       font-size: 3rem;
       margin-top: 2rem;
       margin-bottom: 1rem;
       color: #d35400;
     }
+
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -27,6 +28,7 @@
       max-width: 1200px;
       margin: 0 auto;
     }
+
     .card {
       position: relative;
       background: #fff;
@@ -36,13 +38,16 @@
       cursor: pointer;
       transition: transform 0.2s;
     }
+
     .card:hover {
       transform: scale(1.02);
     }
+
     .card img {
       width: 100%;
       display: block;
     }
+
     .answer {
       position: absolute;
       bottom: 0;
@@ -53,7 +58,13 @@
       padding: 10px;
       font-size: 1.1rem;
       display: none;
+      word-wrap: break-word;
+      line-height: 1.4;
+      max-height: 100%;
+      overflow-y: auto;
+      box-sizing: border-box;
     }
+
     .card.revealed .answer {
       display: block;
     }
@@ -64,74 +75,86 @@
   <h1>What have they been doing?</h1>
 
   <div class="gallery">
+
     <div class="card" onclick="this.classList.toggle('revealed')">
-  <img src="fashion.png" alt="">
-  <div class="answer">She has been choosing outfits for her video.</div>
-</div>
-<div class="card" onclick="this.classList.toggle('revealed')">
-  <img src="camera.png" alt="">
-  <div class="answer">He has been taking pictures all day.</div>
-</div>
-<div class="card" onclick="this.classList.toggle('revealed')">
-  <img src="study.png" alt="">
-  <div class="answer">He has been studying for the test.</div>
-</div>
-<div class="card" onclick="this.classList.toggle('revealed')">
-  <img src="garden.png" alt="">
-  <div class="answer">She has been planting flowers.</div>
-</div>
-<div class="card" onclick="this.classList.toggle('revealed')">
-  <img src="cleaning.png" alt="">
-  <div class="answer">She has been cleaning the house all day.</div>
-</div>
-<div class="card" onclick="this.classList.toggle('revealed')">
-  <img src="calm_morning.png" alt="">
-  <div class="answer">She has been enjoying the calm morning.</div>
-</div>
-<div class="card" onclick="this.classList.toggle('revealed')">
-  <img src="autumn_cozy_atmosphere.png" alt="">
-  <div class="answer">They have been relaxing in the cozy autumn atmosphere.</div>
-</div>
-<div class="card" onclick="this.classList.toggle('revealed')">
-  <img src="autumn_idyll.png" alt="">
-  <div class="answer">She has been admiring the peaceful scenery.</div>
-</div>
-<div class="card" onclick="this.classList.toggle('revealed')">
-  <img src="autumn_mood.png" alt="">
-  <div class="answer">She has been creating something new.</div>
-</div>
-<div class="card" onclick="this.classList.toggle('revealed')">
-  <img src="autumn_morning.png" alt="">
-  <div class="answer">She has been feeding her cat this morning.</div>
-</div>
-<div class="card" onclick="this.classList.toggle('revealed')">
-  <img src="autumn_tea.png" alt="">
-  <div class="answer">He has been drinking tea and thinking.</div>
-</div>
-<div class="card" onclick="this.classList.toggle('revealed')">
-  <img src="rainy_day.png" alt="">
-  <div class="answer">He has been walking in the rain.</div>
-</div>
-<div class="card" onclick="this.classList.toggle('revealed')">
-  <img src="sports_and_rest.png" alt="">
-  <div class="answer">He has been working out.</div>
-</div>
-<div class="card" onclick="this.classList.toggle('revealed')">
-  <img src="autumn_comfort.png" alt="">
-  <div class="answer">She has been staying home and relaxing.</div>
-</div>
-<div class="card" onclick="this.classList.toggle('revealed')">
-  <img src="cat_singing.png" alt="">
-  <div class="answer">The cat has been meowing loudly all morning.</div>
-</div>
-<div class="card" onclick="this.classList.toggle('revealed')">
-  <img src="grandma_phone.png" alt="">
-  <div class="answer">She has been texting her grandchildren.</div>
-</div>
-<div class="card" onclick="this.classList.toggle('revealed')">
-  <img src="tired_student.png" alt="">
-  <div class="answer">He has been studying all night.</div>
-</div>
+      <img src="fashion.png" alt="">
+      <div class="answer">She has been choosing outfits for her video.</div>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('revealed')">
+      <img src="camera.png" alt="">
+      <div class="answer">He has been taking pictures all day.</div>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('revealed')">
+      <img src="study.png" alt="">
+      <div class="answer">He has been studying for the test.</div>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('revealed')">
+      <img src="garden.png" alt="">
+      <div class="answer">She has been planting flowers.</div>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('revealed')">
+      <img src="cleaning.png" alt="">
+      <div class="answer">She has been cleaning the house all day.</div>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('revealed')">
+      <img src="calm_morning.png" alt="">
+      <div class="answer">She has been enjoying the calm morning.</div>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('revealed')">
+      <img src="autumn_cozy_atmosphere.png" alt="">
+      <div class="answer">They have been relaxing in the cozy autumn atmosphere.</div>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('revealed')">
+      <img src="autumn_idyll.png" alt="">
+      <div class="answer">She has been admiring the peaceful scenery.</div>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('revealed')">
+      <img src="autumn_mood.png" alt="">
+      <div class="answer">She has been creating something new.</div>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('revealed')">
+      <img src="autumn_tea.png" alt="">
+      <div class="answer">He has been drinking tea and thinking.</div>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('revealed')">
+      <img src="rainy_day.png" alt="">
+      <div class="answer">He has been walking in the rain.</div>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('revealed')">
+      <img src="sports_and_rest.png" alt="">
+      <div class="answer">He has been working out.</div>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('revealed')">
+      <img src="autumn_comfort.png" alt="">
+      <div class="answer">She has been staying home and relaxing.</div>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('revealed')">
+      <img src="cat_singing.png" alt="">
+      <div class="answer">The cat has been meowing loudly all morning.</div>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('revealed')">
+      <img src="grandma_phone.png" alt="">
+      <div class="answer">She has been texting her grandchildren and listening to music.</div>
+    </div>
+
+    <div class="card" onclick="this.classList.toggle('revealed')">
+      <img src="tired_student.png" alt="">
+      <div class="answer">He has been studying for his exams all night and hasn't slept at all.</div>
+    </div>
 
   </div>
 
